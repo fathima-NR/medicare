@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | MediCare Health Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact <span>Us</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-4" style="margin-bottom:60px">
+        <div class="card reveal" style="text-align:center"><div class="icon-box" style="margin:0 auto 18px"><i class="fa-solid fa-location-dot"></i></div><h3>Address</h3><p>123 Health Street,<br />Dubai, UAE</p></div>
+        <div class="card reveal" style="text-align:center"><div class="icon-box" style="margin:0 auto 18px"><i class="fa-solid fa-phone"></i></div><h3>Phone</h3><p>+971 50 000 0000<br />+971 4 999 9999</p></div>
+        <div class="card reveal" style="text-align:center"><div class="icon-box" style="margin:0 auto 18px"><i class="fa-solid fa-envelope"></i></div><h3>Email</h3><p>info@medicare.com<br />support@medicare.com</p></div>
+        <div class="card reveal" style="text-align:center"><div class="icon-box" style="margin:0 auto 18px"><i class="fa-solid fa-clock"></i></div><h3>Hours</h3><p>Mon - Fri: 8AM - 9PM<br />Sat: 9AM - 6PM</p></div>
+      </div>
+
+      <div class="split" style="align-items:start">
+        <div class="form-card reveal">
+          <span class="tag">Get In Touch</span>
+          <h2 style="font-size:30px;margin-bottom:22px">Send Us a Message</h2>
+          <form data-form="messages" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cname">Name *</label>
+                <input id="cname" name="name" type="text" placeholder="Your name" required />
+                <span class="err">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="cemail">Email *</label>
+                <input id="cemail" name="email" type="email" placeholder="you@example.com" required />
+                <span class="err">Please enter a valid email</span>
+              </div>
+              <div class="form-group full">
+                <label for="subject">Subject *</label>
+                <input id="subject" name="subject" type="text" placeholder="How can we help?" required />
+                <span class="err">Please enter a subject</span>
+              </div>
+              <div class="form-group full">
+                <label for="cmessage">Message *</label>
+                <textarea id="cmessage" name="message" placeholder="Write your message..." required></textarea>
+                <span class="err">Please enter a message</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top:22px">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            <div class="form-success"><i class="fa-solid fa-circle-check"></i> Thanks for reaching out! We'll get back to you within 24 hours.</div>
+          </form>
+        </div>
+        <div class="reveal">
+          <iframe class="map" src="https://www.google.com/maps?q=Dubai%20Healthcare%20City&output=embed" loading="lazy" title="Clinic location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

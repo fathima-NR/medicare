@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Doctors | MediCare Health Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our <span>Doctors</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Doctors</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Our Team</span>
+        <h2>Meet Our <span>Expert Doctors</span></h2>
+        <p>Highly qualified specialists committed to giving you personalised, compassionate and effective care.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+        <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+        <button class="filter-btn" data-filter="neurology">Neurology</button>
+        <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+        <button class="filter-btn" data-filter="general">General</button>
+      </div>
+
+      <div class="grid-4">
+        <div class="doctor-card" data-dept="cardiology">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80" alt="Dr. James Wilson" /></div>
+          <div class="doctor-body">
+            <h3>Dr. James Wilson</h3><span class="spec">Cardiologist</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.9</span><span>15 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. James Wilson" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="pediatrics">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&q=80" alt="Dr. Sarah Lewis" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Sarah Lewis</h3><span class="spec">Pediatrician</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.8</span><span>12 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Sarah Lewis" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="neurology">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80" alt="Dr. Michael Brown" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Michael Brown</h3><span class="spec">Neurologist</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.9</span><span>18 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Michael Brown" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="dermatology">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=600&q=80" alt="Dr. Emily Carter" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Emily Carter</h3><span class="spec">Dermatologist</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.7</span><span>10 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Emily Carter" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="general">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=600&q=80" alt="Dr. Robert Davis" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Robert Davis</h3><span class="spec">General Physician</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.8</span><span>20 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Robert Davis" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="cardiology">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80" alt="Dr. Olivia Martin" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Olivia Martin</h3><span class="spec">Cardiac Surgeon</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.9</span><span>14 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Olivia Martin" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="pediatrics">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&q=80" alt="Dr. Daniel Lee" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Daniel Lee</h3><span class="spec">Pediatric Specialist</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.8</span><span>9 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Daniel Lee" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+        <div class="doctor-card" data-dept="general">
+          <div class="doctor-img"><img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=600&q=80" alt="Dr. Fatima Noor" /></div>
+          <div class="doctor-body">
+            <h3>Dr. Fatima Noor</h3><span class="spec">Family Medicine</span>
+            <div class="doctor-meta"><span><i class="fa-solid fa-star"></i> 4.9</span><span>11 yrs exp.</span></div>
+            <a href="appointment.html?doctor=Dr. Fatima Noor" class="btn btn-outline btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Need Help Choosing a Doctor?</h2>
+          <p>Our team will guide you to the right specialist for your needs.</p>
+        </div>
+        <a href="contact.html" class="btn btn-white">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

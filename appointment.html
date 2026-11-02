@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | MediCare Health Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Book an <span>Appointment</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a> / <span>Appointment</span></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container split" style="align-items:start">
+      <div class="reveal">
+        <span class="tag">Book Your Appointment</span>
+        <h2>Schedule Your Visit <span style="color:var(--primary)">In Minutes</span></h2>
+        <p>Fill in the form and our team will confirm your appointment by phone or email within a few hours.</p>
+
+        <div class="info-list" style="margin:30px 0">
+          <div class="info-item"><i class="fa-solid fa-phone"></i><div><h4>Call for Booking</h4><p>+971 50 000 0000</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-truck-medical"></i><div><h4>Emergency 24/7</h4><p>+971 4 999 9999</p></div></div>
+        </div>
+
+        <div class="card" style="padding:26px">
+          <h3 style="margin-bottom:16px"><i class="fa-solid fa-clock" style="color:var(--primary)"></i> Opening Hours</h3>
+          <ul class="hours">
+            <li><span>Monday - Friday</span><span>8:00 AM - 9:00 PM</span></li>
+            <li><span>Saturday</span><span>9:00 AM - 6:00 PM</span></li>
+            <li><span>Sunday</span><span>Emergency Only</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <h3 style="font-size:22px;margin-bottom:22px">Appointment Details</h3>
+        <form data-form="appointments" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input id="name" name="name" type="text" placeholder="John Doe" required />
+              <span class="err">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" placeholder="+971 50 000 0000" required />
+              <span class="err">Please enter a valid phone number</span>
+            </div>
+            <div class="form-group full">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <span class="err">Please enter a valid email</span>
+            </div>
+            <div class="form-group">
+              <label for="department">Department *</label>
+              <select id="department" name="department" required>
+                <option value="">Select department</option>
+                <option>General Checkup</option>
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Neurology</option>
+                <option>Dermatology</option>
+                <option>Dental Care</option>
+                <option>Orthopedics</option>
+                <option>Eye Care</option>
+              </select>
+              <span class="err">Please select a department</span>
+            </div>
+            <div class="form-group">
+              <label for="doctor">Doctor</label>
+              <select id="doctor" name="doctor">
+                <option value="">Any available doctor</option>
+                <option>Dr. James Wilson</option>
+                <option>Dr. Sarah Lewis</option>
+                <option>Dr. Michael Brown</option>
+                <option>Dr. Emily Carter</option>
+                <option>Dr. Robert Davis</option>
+                <option>Dr. Olivia Martin</option>
+                <option>Dr. Daniel Lee</option>
+                <option>Dr. Fatima Noor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input id="date" name="date" type="date" required />
+              <span class="err">Please choose a date</span>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select time</option>
+                <option>09:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>02:00 PM</option>
+                <option>03:00 PM</option>
+                <option>04:00 PM</option>
+                <option>05:00 PM</option>
+                <option>06:00 PM</option>
+              </select>
+              <span class="err">Please choose a time</span>
+            </div>
+            <div class="form-group full">
+              <label for="message">Symptoms / Notes</label>
+              <textarea id="message" name="message" placeholder="Briefly describe your concern (optional)"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:24px;width:100%;justify-content:center">
+            Confirm Appointment <i class="fa-solid fa-calendar-check"></i>
+          </button>
+          <div class="form-success"><i class="fa-solid fa-circle-check"></i> Thank you! Your appointment request has been received. We'll contact you shortly to confirm.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
